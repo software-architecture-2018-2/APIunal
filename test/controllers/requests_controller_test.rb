@@ -6,7 +6,7 @@ class RequestsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should get index" do
-    get todos_url, as: :json
+    get requests_url, as: :json
     assert_response :success
   end
 
