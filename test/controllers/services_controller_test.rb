@@ -12,7 +12,7 @@ class ServicesControllerTest < ActionDispatch::IntegrationTest
 
   test "should create service" do
     assert_difference('Service.count') do
-      post services_url, params: { service: {  } }, as: :json
+      post services_url, params: { service: { nombre: @service.nombre, cargo: @service.cargo, edad: @service.edad } }, as: :json
     end
 
     assert_response 201
@@ -24,7 +24,7 @@ class ServicesControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update service" do
-    patch service_url(@service), params: { service: {  } }, as: :json
+    patch service_url(@service), params: { service: { nombre: @service.nombre, cargo: @service.cargo, edad: @service.edad } }, as: :json
     assert_response 200
   end
 
