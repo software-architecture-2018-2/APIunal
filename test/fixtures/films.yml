@@ -1,0 +1,12 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nombre: MyString
+  director: MyString
+  anio: 1
+
+two:
+  nombre: MyString
+  director: MyString
+  anio: 1
+
